@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "egg4health",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

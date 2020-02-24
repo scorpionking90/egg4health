@@ -1,0 +1,7 @@
+{
+  "name": "egg4health",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
