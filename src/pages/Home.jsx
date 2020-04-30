@@ -35,15 +35,13 @@ class Home extends React.Component {
               <h3>{this.props.userList.length > 0 ? this.props.userList[1].userId : 2}</h3>
             </div>
 
+
           </Carousel>
         </IonContent>
       </IonPage>
     );
   }
 }
-// Home.propTypes = {
-//   userList: PropTypes.array,
-// }
 function mapStateToProps(state) {
   return {
     userList: state.userList,
