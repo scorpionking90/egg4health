@@ -19,8 +19,6 @@ class Home extends React.Component {
     this.props.getUserAcions.fetchActiveOrganization();
   }
   render() {
-    console.log(this.props.userList);
-
 
     return (
       <IonPage>
