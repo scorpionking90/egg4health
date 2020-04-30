@@ -52,6 +52,5 @@ function mapDispatchToProps(dispatch) {
     getUserAcions: bindActionCreators(getUserAcions, dispatch),
   }
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
