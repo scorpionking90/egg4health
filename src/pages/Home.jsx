@@ -10,7 +10,6 @@ import './Home.css';
 import {
   Form
 } from 'antd';
-
 class Home extends React.Component {
   onChange = () => {
 
