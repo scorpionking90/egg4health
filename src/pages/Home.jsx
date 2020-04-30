@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import { Carousel } from 'antd';
 import { connect } from 'react-redux'
-import { bindActionCreators, Dispatch} from 'redux'
+import { bindActionCreators, Dispatch } from 'redux'
 import store from '../store/store.js'
 import * as getUserAcions from '../actions/getUserActions';
 // import MyTypes from 'MyTypes';
@@ -11,37 +11,37 @@ import {
   Form
 } from 'antd';
 
-class Home extends React.Component{
-  onChange=()=>{
-    
+class Home extends React.Component {
+  onChange = () => {
+
   }
-   componentDidMount(){
+  componentDidMount() {
     this.props.getUserAcions.fetchActiveOrganization();
   }
-  render(){
+  render() {
     console.log(this.props.userList);
 
-    
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-      <Carousel afterChange={this.onChange}>
-    <div>
-  <h3>{this.props.userList.length > 0?this.props.userList[0].userId:1}</h3>
-    </div>
-    <div>
-  <h3>{this.props.userList.length > 0?this.props.userList[1].userId:2}</h3>
-    </div>
-   
-  </Carousel>
-      </IonContent>
-    </IonPage>
-  );
+
+    return (
+      <IonPage>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>Blank</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent>
+          <Carousel afterChange={this.onChange}>
+            <div>
+              <h3>{this.props.userList.length > 0 ? this.props.userList[0].userId : 1}</h3>
+            </div>
+            <div>
+              <h3>{this.props.userList.length > 0 ? this.props.userList[1].userId : 2}</h3>
+            </div>
+
+          </Carousel>
+        </IonContent>
+      </IonPage>
+    );
   }
 }
 // Home.propTypes = {
@@ -53,7 +53,7 @@ function mapStateToProps(state) {
   }
 }
 function mapDispatchToProps(dispatch) {
-  return{ 
+  return {
     getUserAcions: bindActionCreators(getUserAcions, dispatch),
   }
 }
