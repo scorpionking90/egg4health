@@ -19,6 +19,9 @@ class Home extends React.Component {
   componentDidMount() {
     this.props.getUserAcions.fetchActiveOrganization();
   }
+
+
+
   render() {
     return (
       <IonPage>
