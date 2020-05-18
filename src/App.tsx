@@ -33,6 +33,8 @@ const App: React.FC = () => (
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
+
+
 );
 
 export default App;
